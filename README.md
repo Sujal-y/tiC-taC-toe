@@ -1,9 +1,18 @@
 # tiC-taC-toe
 tic tac toe in vanilla C made as a small timepass project
 
-//Tie doesn't work right now
-//If a position is repeated by X or O it skips their turn for now
-
-v0.5 will contain functions to ensure better flow of control throughout the program and fix the above two issues
+v1.1 will add:
+1. player's choice of UI changed at any time by inputting a cheat code
+2. terminal delayed for smooth experience in some ides
 
 -SonicX1829 (Remaster Expert)
+
+______________
+v1.0 updates
+______________
+
+1. tie works as intended now
+2. player's turn is not skipped anymore
+3. improved UI
+4. functions added for easier flow of control
+"#tiC-taC-toe-v0.4" 
