@@ -15,4 +15,3 @@ ______________
 2. player's turn is not skipped anymore
 3. improved UI
 4. functions added for easier flow of control
-"#tiC-taC-toe-v0.4" 
