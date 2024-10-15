@@ -7,9 +7,9 @@ int game_status = 1 ;//If match in progress value = 1
 char current_player ='X'; //current player
 
 void printInstructions(){//outputs the numbers corresponding to the positions
-printf("\t1|2|3\n");
-printf("\t4|5|6\n");
-printf("\t7|8|9\n");
+    printf("\t1|2|3\n");
+    printf("\t4|5|6\n");
+    printf("\t7|8|9\n");
 }
 
 void outputarray(){//displays array
