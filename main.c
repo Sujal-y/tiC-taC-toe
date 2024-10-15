@@ -5,7 +5,6 @@ char r2[3]={' ',' ',' '}; //board
 char r3[3]={' ',' ',' '}; //board
 int game_status = 1 ;//If match in progress value = 1
 char current_player ='X'; //current player
-int count = 0;
 
 void printInstructions(){//outputs the numbers corresponding to the positions
 printf("\t1|2|3\n");
@@ -61,8 +60,14 @@ void switchPlayer() {//switches the current player
 }
 
 int checkTie() { //checks tie
-    if (count==9)return 0;
-    else return 1;
+    int empty = 0; //default the board has no empty space
+    for(int i=0;i<3;i++){
+    if(r1[i]== ' ') empty=1;
+    if(r2[i]== ' ') empty=1;
+    if(r3[i]== ' ') empty=1;
+    }
+    if (empty == 1) return 1;//has empty space
+    else {printf("its a tie!");return 0;}
 }
 
 int checkwin(){//checks weather match is finished or not ,just hardcoded shit
