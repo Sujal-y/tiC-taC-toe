@@ -1,5 +1,5 @@
 #include<stdio.h>
-char version[] ="v1";
+char version[] ="v1.0";
 char r1[3]={' ',' ',' '}; //board
 char r2[3]={' ',' ',' '}; //board
 char r3[3]={' ',' ',' '}; //board
