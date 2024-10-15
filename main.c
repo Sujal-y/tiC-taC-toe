@@ -1,10 +1,11 @@
 #include<stdio.h>
-char version[] ="v0.52";
+char version[] ="v1";
 char r1[3]={' ',' ',' '}; //board
 char r2[3]={' ',' ',' '}; //board
 char r3[3]={' ',' ',' '}; //board
 int game_status = 1 ;//If match in progress value = 1
 char current_player ='X'; //current player
+int count = 0;
 
 void printInstructions(){//outputs the numbers corresponding to the positions
 printf("\t1|2|3\n");
@@ -61,15 +62,8 @@ else current_player = 'X';
 }
 
 int checkTie() { //checks tie
-int empty = 0; //default the board has no empty space
-for(int i=0;i<3;i++){
-if(r1[i]== ' ') empty=1;
-if(r2[i]== ' ') empty=1;
-if(r3[i]== ' ') empty=1;
-}
-if (empty == 1) return 1;//has empty space
-else {printf("its a tie!");return 0;}
-
+    if (count==9)return 0;
+    else return 1;
 }
 
 int checkwin(){//checks weather match is finished or not
@@ -188,7 +182,7 @@ else if (input==9 && r3[2]!='X' && r3[2]!='O')
 {
 r3[2]=current_player;return 1;
 }
-else{printf("\talready there, try again\n");goto reenter;}
+else{printf("\talready there, try again\n");count++;goto reenter;}
 }
 else printf("%c did not enter a valid value, GAME OVER...\n",current_player);
 return 0;
