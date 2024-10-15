@@ -12,47 +12,47 @@ printf("\t4|5|6\n");
 printf("\t7|8|9\n");
 }
 
-void outputarray(){//outputs the current board
-int i=0,j=0; //using i and j to get output in ||* form instead of ||*|
-printf("\t");
-while (i<3)
-{
-while(j== 0||j==1){
-printf("%c|",r1[j]);
-j++;
-i++;
-}
-printf("%c",r1[i]);
-i+=1;
-}
+void outputarray(){//displays array
+int i=0,j=0;
+    printf("\t");
+    while (i<3)
+    {
+    while(j== 0||j==1){
+    printf("%c|",r1[j]);
+    j++;
+    i++;
+    }
+    printf("%c",r1[i]);
+    i+=1;
+    }
 
-printf("\n\t");
-i=0; j=0;
+    printf("\n\t");
+    i=0; j=0;
 
-while (i<3)
-{
-while(j== 0||j==1)
-{
-printf("%c|",r2[j]);
-j++; i++;
-}
-printf("%c",r2[i]);
-i+=1;
-}
+    while (i<3)
+    {
+    while(j== 0||j==1)
+    {
+    printf("%c|",r2[j]);
+    j++; i++;
+    }
+    printf("%c",r2[i]);
+    i+=1;
+    }
 
-printf("\n\t");
-i=0; j=0;
-while (i<3)
-{
-while(j== 0||j==1)
-{
-printf("%c|",r3[j]);
-j++; i++;
-}
-printf("%c",r3[i]);
-i+=1;
-}
-printf("\n");
+    printf("\n\t");
+    i=0; j=0;
+    while (i<3)
+    {
+    while(j== 0||j==1)
+    {
+    printf("%c|",r3[j]);
+    j++; i++;
+    }
+    printf("%c",r3[i]);
+    i+=1;
+    }
+    printf("\n");
 }
 
 void switchPlayer() {//switches the current player
@@ -143,7 +143,6 @@ else //if match not over it continues and changes current player
 switchPlayer();
 return 1;
 }
-
 }
 
 int makeMove(){//new play
