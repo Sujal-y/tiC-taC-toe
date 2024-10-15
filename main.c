@@ -185,7 +185,7 @@ int makeMove(){//new play
     {
     r3[2]=current_player;return 1;
     }
-    else{printf("\talready there, try again\n");count++;goto reenter;}
+    else{printf("\talready there, try again\n");goto reenter;}
     }
     else printf("%c did not enter a valid value, GAME OVER...\n",current_player);
     return 0;
