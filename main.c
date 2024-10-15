@@ -378,7 +378,6 @@ int tie()
 // main function
 int main(){
      printf("TiC TaC Toe v1.0   ~ SonicX1829\n");
-
      printf("X starts first!\n");
      while (g==1)
      {
@@ -387,31 +386,22 @@ int main(){
          //checks for turns
          if (t%2==0)
         {
-             if (Oturn()==0)
-             {
-                 break;
-              }
+            if (Oturn()==0)break;
+              
         }
-         else
-         {
-             if (Xturn()==0)
-             {
-                 break;
-             }
-         }
+        else
+        {
+            if (Xturn()==0)break;
+        }
          //evaluate if the person won the game
-         if (win()==0)
-         {
-            break;
-         }
+         if (win()==0)break;
+         
          //checks for tie
-         if (tie()==0)
-         {
-            break;
-         }
+         if (tie()==0)break;
+
          //changes turns
          t+=1;
      }
      return 0;
- 
- }
+
+}
